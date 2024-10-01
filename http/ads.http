@@ -1,0 +1,50 @@
+GET http://localhost:3000/ads
+# GET http://localhost:3000/ads?location=paris
+
+###
+GET http://localhost:3000/ads/2
+
+###
+# GET http://localhost:3000/ads/location/bordeaux
+
+###
+POST http://localhost:3000/ads
+Content-Type: application/json
+
+{
+   "title": "Range Rover",
+   "description":
+      "Super fun",
+   "owner": "jane.doe@gmail.com",
+   "price": 8,
+   "picture":
+      "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=800",
+   "location": "Perpignan",
+   "createdAt": "2024-02-18",
+   "category": 2,
+   "tags": [{"id": 3}]
+}
+
+###
+PUT http://localhost:3000/ads/10
+Content-Type: application/json
+
+{
+   "title": "Lot de 3 coussin",
+   "description":
+      "Super fun",
+   "owner": "jane.doe@gmail.com",
+   "price": 30,
+   "picture":
+      "https://images.pexels.com/photos/858192/pexels-photo-858192.jpeg?auto=compress&cs=tinysrgb&w=800",
+   "location": "Perpignan",
+   "createdAt": "2024-02-18",
+   "category": 2,
+   "tags": [{"id": 3}]
+}
+
+###
+DELETE http://localhost:3000/ads/9
+
+### 
+DELETE http://localhost:3000/ads

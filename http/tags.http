@@ -1,0 +1,24 @@
+GET http://localhost:3000/tags
+# GET http://localhost:3000/tags?name=occasion
+
+###
+GET http://localhost:3000/tags/4
+
+###
+POST http://localhost:3000/tags
+Content-Type: application/json
+
+{
+   "name": "Décoration"
+}
+
+###
+PUT http://localhost:3000/tags/5
+Content-Type: application/json
+
+{
+   "name": "Vêtements"
+}
+
+###
+DELETE http://localhost:3000/tags/1

@@ -1,0 +1,21 @@
+# GET http://localhost:3000/categories
+GET http://localhost:3000/categories?name=decoration
+
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+   "name": "Autre"
+}
+
+###
+PUT http://localhost:3000/categories/5
+Content-Type: application/json
+
+{
+   "name": "Vêtements"
+}
+
+###
+DELETE http://localhost:3000/categories/4
