@@ -28,12 +28,11 @@ app.get("/ads", async (req, res) => {
         category: { name: req.query.category as string },
       },
       relations: {
-        category: true,
         tags: true
       },
     });
   } else {
-    ads = await Ad.find({ relations: { category: true, tags: true } });
+    ads = await Ad.find({ relations: { tags: true } });
   }
   res.send(ads);
 });

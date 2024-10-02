@@ -1,12 +1,12 @@
-# GET http://localhost:3000/categories
-GET http://localhost:3000/categories?name=decoration
+GET http://localhost:3000/categories
+# GET http://localhost:3000/categories?name=decoration
 
 ###
 POST http://localhost:3000/categories
 Content-Type: application/json
 
 {
-   "name": "Autre"
+   "name": "Outillage"
 }
 
 ###
