@@ -21,18 +21,30 @@ app.get("/", (_req, res) => {
 // GET ALL ADS
 app.get("/ads", async (req, res) => {
   let ads: Ad[];
-  
   if (req.query.category) {
     ads = await Ad.find({
       where: {
         category: { name: req.query.category as string },
       },
-      relations: {
-        tags: true
+      order: {
+        id: "DESC",
+      },
+      relations: { tags: true },
+    });
+  }
+  if (req.query.title) {
+    ads = await Ad.find({
+      where: {
+        title: Like(`%${req.query.title as string}%`),
       },
     });
   } else {
-    ads = await Ad.find({ relations: { tags: true } });
+    ads = await Ad.find({
+      order: {
+        id: "DESC",
+      },
+      relations: { tags: true },
+    });
   }
   res.send(ads);
 });
