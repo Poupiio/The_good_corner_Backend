@@ -1,5 +1,6 @@
-GET http://localhost:3000/ads
+# GET http://localhost:3000/ads
 # GET http://localhost:3000/ads?location=paris
+GET http://localhost:3000/ads?category=autre
 
 ###
 GET http://localhost:3000/ads/2

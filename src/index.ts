@@ -24,15 +24,14 @@ app.get("/ads", async (req, res) => {
   if (req.query.category) {
     ads = await Ad.find({
       where: {
-        category: { name: req.query.category as string },
+        category: { name:  Like(`%${req.query.category as string}%`) },
       },
       order: {
         id: "DESC",
       },
       relations: { tags: true },
     });
-  }
-  if (req.query.title) {
+  } else if (req.query.title) {
     ads = await Ad.find({
       where: {
         title: Like(`%${req.query.title as string}%`),
