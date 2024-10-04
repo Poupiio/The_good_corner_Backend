@@ -68,7 +68,7 @@ app.post("/ads", async (req, res) => {
   newAd.createdAt = req.body.createdAt;
   // Si une catégorie est trouvée, on l'applique, sinon on attribue par défaut la catégorie "Autre (id 6)"
   newAd.category = req.body.category ? req.body.category : 6;
-  newAd.tags = req.body.tags ? req.body.category : "";
+  newAd.tags = req.body.tags ? req.body.tags : "";
 
   const errors = await validate(newAd);
   if (errors.length > 0) {
