@@ -1,0 +1,54 @@
+# GET http://localhost:3000/ads
+# GET http://localhost:3000/ads?location=paris
+GET http://localhost:3000/ads?category=autre
+
+###
+GET http://localhost:3000/ads/2
+
+###
+# GET http://localhost:3000/ads/location/bordeaux
+
+###
+POST http://localhost:3000/ads
+Content-Type: application/json
+
+{
+   "title": "Machine à café",
+   "description":
+      "En très bon état, achetée récemment",
+   "owner": "Daniel",
+   "price": 50,
+   "picture":
+      "https://images.pexels.com/photos/302894/pexels-photo-302894.jpeg?auto=compress&cs=tinysrgb&w=800",
+   "location": "Saint-Etienne",
+   "createdAt": "2024-09-18",
+   "category": 6,
+   "tags": [{"id": 3}]
+}
+
+###
+PUT http://localhost:3000/ads/2
+Content-Type: application/json
+
+# {
+#    "title": "Lot de 3 coussin",
+#    "description":
+#       "Super fun",
+#    "owner": "jane.doe@gmail.com",
+#    "price": 30,
+#    "picture":
+#       "https://images.pexels.com/photos/593328/pexels-photo-593328.jpeg?auto=compress&cs=tinysrgb&w=800",
+#    "location": "Perpignan",
+#    "createdAt": "2024-02-18",
+#    "category": 2,
+#    "tags": [{"id": 3}]
+# }
+{
+   "picture": "https://images.pexels.com/photos/593328/pexels-photo-593328.jpeg?auto=compress&cs=tinysrgb&w=800"
+}
+
+###
+DELETE http://localhost:3000/ads/9
+
+### 
+DELETE http://localhost:3000/ads

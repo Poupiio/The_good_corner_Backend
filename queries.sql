@@ -1,0 +1,349 @@
+-- INSERT INTO ad (title, description, owner, price, picture, location, createdAt) 
+-- VALUES
+--    ("Car",
+--    "My car is gray, working fine. I'm selling it because I've got a new one.",
+--    "car.seller@gmail.com",
+--    22200,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Paris",
+--    "2023-09-05T10:13:14.755Z"
+-- ),
+--    ("Wood table",
+--    "Awesome table, perfect for dining.",
+--    "jane.doe@gmail.com",
+--    800,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Bordeaux",
+--    "2023-09-05T10:13:14.755Z"
+-- ),
+--    ("Bicycle",
+--    "Almost new bike, perfect for city rides.",
+--    "bike.seller@gmail.com",
+--    250,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Lyon",
+--    "2024-09-01T08:45:30.755Z"
+-- ),
+--    ("Laptop",
+--    "High-end gaming laptop, great condition.",
+--    "tech.seller@gmail.com",
+--    1500,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Paris",
+--    "2023-09-01T11:15:40.755Z"
+-- ),
+--    ("Electric scooter",
+--    "Brand new scooter, never used.",
+--    "scooter.seller@gmail.com",
+--    900,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Bordeaux",
+--    "2023-07-15T09:30:25.755Z"
+-- ),
+--    ("Smartphone",
+--    "Latest model, excellent condition, barely used.",
+--    "mobile.seller@gmail.com",
+--    700,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Lyon",
+--    "2023-08-12T14:50:00.755Z"
+-- ),
+--    ("Gaming console",
+--    "Next-gen console, includes 2 controllers.",
+--    "console.seller@gmail.com",
+--    500,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Paris",
+--    "2023-08-05T16:12:10.755Z"
+-- ),
+--    ("Dining set",
+--    "Full dining set with chairs, perfect for a family.",
+--    "home.seller@gmail.com",
+--    12,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Bordeaux",
+--    "2024-09-01T10:00:55.755Z"
+-- ),
+--    ("Bookshelf",
+--    "Wooden bookshelf, very sturdy and stylish.",
+--    "furniture.seller@gmail.com",
+--    25,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Lyon",
+--    "2023-07-18T12:30:45.755Z"
+-- ),
+--    ("Camera",
+--    "Professional DSLR camera with lens included.",
+--    "photo.seller@gmail.com",
+--    1800,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Paris",
+--    "2023-09-07T17:20:50.755Z"
+-- ),
+--    ("Guitar",
+--    "Electric guitar in great condition.",
+--    "music.seller@gmail.com",
+--    300,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Lyon",
+--    "2024-09-01T11:00:00.755Z"
+-- ),
+--    ("Washing machine",
+--    "A fully functional washing machine, works perfectly.",
+--    "appliance.seller@gmail.com",
+--    250,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Bordeaux",
+--    "2023-07-25T09:30:25.755Z"
+-- ),
+--    ("Air conditioner",
+--    "Portable air conditioner, used once.",
+--    "ac.seller@gmail.com",
+--    450,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Paris",
+--    "2023-09-10T15:15:15.755Z"
+-- ),
+--    ("Vintage clock",
+--    "Antique wall clock in excellent condition.",
+--    "antiques.seller@gmail.com",
+--    12,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Lyon",
+--    "2023-06-20T14:00:00.755Z"
+-- ),
+--    ("Paintings",
+--    "Two beautiful paintings, original artwork.",
+--    "art.seller@gmail.com",
+--    15,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Bordeaux",
+--    "2023-08-28T12:00:00.755Z"
+-- ),
+--    ("Video game collection",
+--    "A collection of popular video games.",
+--    "gamer.seller@gmail.com",
+--    150,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Paris",
+--    "2023-05-05T10:00:00.755Z"
+-- ),
+--    ("Fishing gear",
+--    "Complete fishing gear for enthusiasts.",
+--    "fishing.seller@gmail.com",
+--    400,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Lyon",
+--    "2023-07-15T15:30:00.755Z"
+-- ),
+--    ("Camping tent",
+--    "Spacious camping tent, used once.",
+--    "outdoor.seller@gmail.com",
+--    350,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Bordeaux",
+--    "2023-08-10T09:30:00.755Z"
+-- ),
+--    ("Collectible coins",
+--    "Set of rare collectible coins.",
+--    "collectible.seller@gmail.com",
+--    200,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Paris",
+--    "2024-09-01T17:20:50.755Z"
+-- ),
+--    ("Drone",
+--    "Camera drone, perfect for photography.",
+--    "drone.seller@gmail.com",
+--    750,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Lyon",
+--    "2023-08-25T10:10:10.755Z"
+-- ),
+--    ("Home gym set",
+--    "Complete gym set for home workouts.",
+--    "fitness.seller@gmail.com",
+--    1200,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Bordeaux",
+--    "2023-09-05T08:00:00.755Z"
+-- ),
+--    ("Luxury watch",
+--    "Elegant watch, barely worn.",
+--    "watch.seller@gmail.com",
+--    5000,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Paris",
+--    "2023-06-15T11:50:00.755Z"
+-- ),
+--    ("Mattress",
+--    "King-size mattress, like new.",
+--    "bed.seller@gmail.com",
+--    30,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Lyon",
+--    "2023-08-17T13:30:00.755Z"
+-- ),
+--    ("Console table",
+--    "Stylish console table, perfect for entryway.",
+--    "furniture2.seller@gmail.com",
+--    300,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Bordeaux",
+--    "2023-09-03T14:00:00.755Z"
+-- ),
+--    ("Coffee machine",
+--    "Espresso coffee machine, in perfect working condition.",
+--    "coffee.seller@gmail.com",
+--    150,
+--    "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--    "Paris",
+--    "2023-08-01T12:00:00.755Z"
+-- );
+
+
+-- SELECT * FROM ad;
+
+-- SELECT * FROM ad WHERE location = 'Bordeaux';
+
+-- DELETE FROM ad WHERE price > 40;
+
+-- UPDATE ad SET price = 0
+   -- WHERE createdAt = '2023-09-01T11:15:40.755Z';
+
+
+-- SELECT AVG(price) FROM ad WHERE location = "Paris";
+
+
+-- CREATE TABLE category (
+--    id INTEGER PRIMARY KEY AUTOINCREMENT,
+--    name VARCHAR NOT NULL
+-- );
+
+-- INSERT INTO category (name) VALUES ("Vêtements"), ("Décoration"), ("Equipement bébé");
+
+-- CREATE TABLE ad (
+-- 	id INTEGER PRIMARY KEY AUTOINCREMENT,
+-- 	title VARCHAR(100) NOT NULL,
+-- 	description TEXT,
+-- 	owner VARCHAR(100) NOT NULL,
+-- 	price INT,
+--    picture VARCHAR(100),
+--    location VARCHAR(100),
+-- 	createdAt DATE,
+--    category_id INT NOT NULL,
+--    FOREIGN KEY (category_id) REFERENCES category(id)
+-- );
+
+-- PRAGMA foreign_keys = ON;
+
+-- CREATE TABLE IF NOT EXISTS ad (
+-- 	id INTEGER PRIMARY KEY AUTOINCREMENT,
+-- 	title VARCHAR(100) NOT NULL,
+-- 	description TEXT,
+-- 	owner VARCHAR(100) NOT NULL,
+-- 	price INT,
+-- 	picture VARCHAR(100),
+-- 	location VARCHAR(100),
+-- 	createdAt DATE,
+-- 	category_id INT NOT NULL,
+-- 	FOREIGN KEY (category_id) REFERENCES category(id)
+-- );
+
+-- INSERT INTO ad (title, description, owner, price, picture, location, createdAt, category_id) 
+-- VALUES
+--     ("Luxury watch",
+--     "Elegant watch, barely worn.",
+--     "watch.seller@gmail.com",
+--     5000,
+--     "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--     "Paris",
+--     "2023-06-15T11:50:00.755Z",
+--     2
+--     ),
+--     ("Wood table",
+--     "Awesome table, perfect for dining.",
+--     "jane.doe@gmail.com",
+--     800,
+--     "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--     "Bordeaux",
+--     "2023-09-05T10:13:14.755Z",
+--     2
+--     ),
+--     ("Bookshelf",
+--     "Wooden bookshelf, very sturdy and stylish.",
+--     "furniture.seller@gmail.com",
+--     25,
+--     "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--     "Lyon",
+--     "2023-07-18T12:30:45.755Z",
+--     2
+--     ),
+--     ("Guitar",
+--     "Electric guitar in great condition.",
+--     "music.seller@gmail.com",
+--     300,
+--     "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--     "Lyon",
+--     "2024-09-01T11:00:00.755Z",
+--     2
+--     ),
+--     ("Camping tent",
+--     "Spacious camping tent, used once.",
+--     "outdoor.seller@gmail.com",
+--     350,
+--     "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--     "Bordeaux",
+--     "2023-08-10T09:30:00.755Z",
+--     3
+--     ),
+--     ("Washing machine",
+--     "A fully functional washing machine, works perfectly.",
+--     "appliance.seller@gmail.com",
+--     250,
+--     "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--     "Bordeaux",
+--     "2023-07-25T09:30:25.755Z",
+--     3
+--     ),
+--     ("Car",
+--     "My car is gray, working fine. I'm selling it because I've got a new one.",
+--     "car.seller@gmail.com",
+--     22200,
+--     "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--     "Paris",
+--     "2023-09-05T10:13:14.755Z",
+--     3
+--     ),
+--     ("Electric scooter",
+--     "Brand new scooter, never used.",
+--     "scooter.seller@gmail.com",
+--     900,
+--     "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--     "Bordeaux",
+--     "2023-07-15T09:30:25.755Z",
+--     3
+--     ),
+--     ("Home gym set",
+--     "Complete gym set for home workouts.",
+--     "fitness.seller@gmail.com",
+--     1200,
+--     "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--     "Bordeaux",
+--     "2023-09-05T08:00:00.755Z",
+--     3
+--     ),
+--     ("Mattress",
+--     "King-size mattress, like new.",
+--     "bed.seller@gmail.com",
+--     30,
+--     "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+--     "Lyon",
+--     "2023-08-17T13:30:00.755Z",
+--     2
+-- );
+
+
+-- UPDATE ad SET categoryId= 1;
+
+-- INSERT INTO tag ('name') VALUES ("Vintage"), ("Luxe"), ("Occasion"), ("Neuf"), ("Promotion");
