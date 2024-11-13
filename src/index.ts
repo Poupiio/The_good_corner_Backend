@@ -7,7 +7,10 @@ import { validate } from "class-validator";
 import { Category } from "./entities/Category";
 import { Like } from "typeorm";
 import { Tag } from "./entities/Tag";
+<<<<<<< HEAD
 import { Picture } from "./entities/Picture";
+=======
+>>>>>>> ab987672d329d73bcd3e28f11ec1258ed549b79b
 
 const app = express();
 const port = 3000;
@@ -51,15 +54,20 @@ app.get("/ads", async (req, res) => {
 
 // GET AD BY ID
 app.get("/ads/:id", async (req, res) => {
+<<<<<<< HEAD
   const adById = await Ad.findOneByOrFail(
     { id: parseInt(req.params.id) }
   );
+=======
+  const adById = await Ad.findOneByOrFail({ id: parseInt(req.params.id) });
+>>>>>>> ab987672d329d73bcd3e28f11ec1258ed549b79b
   res.send(adById);
 });
 
 // CREATE AD
 app.post("/ads", async (req, res) => {
   const newAd = new Ad();
+<<<<<<< HEAD
 
   const pictures: Picture[] = [];
   req.body.pictures.forEach(async (el: string) => {
@@ -68,6 +76,9 @@ app.post("/ads", async (req, res) => {
     pictures.push(newPicture);
   });
 
+=======
+  
+>>>>>>> ab987672d329d73bcd3e28f11ec1258ed549b79b
   newAd.title = req.body.title;
   newAd.description = req.body.description;
   newAd.owner = req.body.owner;
@@ -80,10 +91,13 @@ app.post("/ads", async (req, res) => {
   newAd.category = req.body.category ? req.body.category : 6;
   newAd.tags = req.body.tags ? req.body.tags : "";
 
+<<<<<<< HEAD
   if (pictures.length > 0) {
     newAd.pictures = pictures;
   }
 
+=======
+>>>>>>> ab987672d329d73bcd3e28f11ec1258ed549b79b
   const errors = await validate(newAd);
   if (errors.length > 0) {
     console.log(errors);
