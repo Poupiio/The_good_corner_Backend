@@ -1,14 +1,9 @@
 import { MaxLength } from "class-validator";
-<<<<<<< HEAD
 import { BaseEntity, Column, Entity, JoinTable, ManyToMany, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { Category } from "./Category";
 import { Tag } from "./Tag";
 import { Picture } from "./Picture";
-=======
-import { BaseEntity, Column, Entity, JoinTable, ManyToMany, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
-import { Category } from "./Category";
-import { Tag } from "./Tag";
->>>>>>> ab987672d329d73bcd3e28f11ec1258ed549b79b
+
 
 @Entity()
 export class Ad extends BaseEntity {
@@ -46,22 +41,15 @@ export class Ad extends BaseEntity {
    category: Category;
 
    @ManyToMany(
-<<<<<<< HEAD
       () => Tag, tag => tag.ads, { eager: true }
-=======
-      () => Tag, tag => tag.ads
->>>>>>> ab987672d329d73bcd3e28f11ec1258ed549b79b
    )
    @JoinTable()
    // @JoinTable obligatoire sur Ad ou Tag => définit la création de la table de jointure
    tags: Tag[];
-<<<<<<< HEAD
 
    @OneToMany(() => Picture, (picture) => picture.ad, {
       cascade: true,
       eager: true,
    })
    pictures: Picture[];
-=======
->>>>>>> ab987672d329d73bcd3e28f11ec1258ed549b79b
 }
