@@ -1,4 +1,4 @@
-import { MaxLength } from "class-validator";
+// import { MaxLength } from "class-validator";
 import { BaseEntity, Column, Entity, JoinTable, ManyToMany, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { Category } from "./Category";
 import { Tag } from "./Tag";
@@ -22,9 +22,9 @@ export class Ad extends BaseEntity {
    @Column()
    price: number;
 
-   @Column()
-   @MaxLength(2000)
-   picture: string;
+   // @Column()
+   // @MaxLength(2000)
+   // picture: string;
 
    @Column()
    location: string;

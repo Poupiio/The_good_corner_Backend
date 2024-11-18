@@ -70,7 +70,9 @@ app.post("/ads", async (req, res) => {
   newAd.description = req.body.description;
   newAd.owner = req.body.owner;
   newAd.price = req.body.price;
-  newAd.picture = req.body.picture;
+  if (pictures.length > 0) {
+    newAd.pictures = pictures;
+  }
   newAd.location = req.body.location;
   newAd.createdAt = req.body.createdAt;
   // Si une catégorie est trouvée, on l'applique, sinon on attribue par défaut la catégorie "Autre (id 6)"

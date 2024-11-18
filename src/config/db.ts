@@ -1,5 +1,5 @@
 
-import { Picture } from "src/entities/Picture";
+import { Picture } from "../entities/Picture";
 import { Ad } from "../entities/Ad";
 import { Category } from "../entities/Category";
 import { Tag } from "../entities/Tag";

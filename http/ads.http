@@ -16,10 +16,11 @@ Content-Type: application/json
    "title": "Machine à café",
    "description":
       "En très bon état, achetée récemment",
-   "owner": "Daniel",
-   "price": 50,
-   "picture":
-      "https://images.pexels.com/photos/302894/pexels-photo-302894.jpeg?auto=compress&cs=tinysrgb&w=800",
+   "owner": "Martine",
+   "price": 30,
+   "pictures": [
+      "https://images.pexels.com/photos/302894/pexels-photo-302894.jpeg?auto=compress&cs=tinysrgb&w=800", "https://www.maxicoffee.com/images/products/large/severin_ka_4814.jpg"
+   ],
    "location": "Saint-Etienne",
    "createdAt": "2024-09-18",
    "category": 6,
